@@ -1,0 +1,50 @@
+package_name: microsoft_model
+pipeline_name: microsoft_pipeline
+pipeline_save_file: trained_models/model.pkl
+
+data_folder: data/
+recommendations_file: MSFT_upgrades_downgrades.csv
+price_file: MSFT_price.csv
+income_file: MSFT_income.csv
+balance_file: MSFT_balance.csv
+cashflow_file: MSFT_cashflow.csv
+
+test_size: 0.2
+random_state: 42
+target: target_binary
+
+wacc: 0.9
+growth_rate: 0.04
+
+numerical_features:
+  - Gross_Margin
+  - EBIT_Margin
+  - Net_Margin
+  - Revenue_Growth
+  - RD_Pct
+  - Current_Ratio
+  - Quick_Ratio
+  - Debt_To_Equity
+  - Debt_To_Assets
+  - ROE
+  - ROA
+  - Cash_Flow_Margin
+  - FCF_Margin
+  - GDP
+  - GDP_Growth
+  - FEDFUNDS
+  - FCF_Per_Share
+  - Intrinsic_Value
+  - Stock_Price
+  - Margin_Of_Safety
+
+features_to_drop:
+  - GradeDate
+  - Firm
+  - ToGrade
+  - FromGrade
+  - Action
+  - priceTargetAction
+  - currentPriceTarget
+  - priorPriceTarget
+  - Year
