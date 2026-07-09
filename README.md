@@ -1,3 +1,15 @@
+<div align="center">
+
+# Abdallah Hashad
+
+### Quantitative Finance × Machine Learning
+
+**Data Scientist**
+
+</div>
+
+---
+
 # Microsoft Analyst Recommendation Prediction
 
 A production-ready machine learning system that predicts whether Wall Street analysts will be **Bullish or Not Bullish** on Microsoft (MSFT) based on fundamental financial data, macroeconomic indicators, and DCF valuation analysis.
