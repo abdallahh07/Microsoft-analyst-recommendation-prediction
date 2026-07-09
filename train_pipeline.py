@@ -2,6 +2,7 @@ import joblib
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
+from microsoft_model.processing.data_manager import load_data
 from microsoft_model.config.config import config
 from microsoft_model.processing.features import merge_all
 from microsoft_model.pipeline import microsoft_pipeline
@@ -33,7 +34,7 @@ def run_training():
     print(f"AUC-ROC: {auc:.4f}")
     
     # Save
-    save_path = Path(__file__).parent / config.pipeline_save_file
+    save_path = Path(__file__).parent / "microsoft_model" / config.pipeline_save_file
     joblib.dump(microsoft_pipeline, save_path)
     print(f"Model saved to {save_path}")
 

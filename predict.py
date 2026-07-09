@@ -4,7 +4,7 @@ from pathlib import Path
 from microsoft_model.config.config import config
 
 def load_pipeline():
-    save_path = Path(__file__).parent / config.pipeline_save_file
+    save_path = Path(__file__).parent / "microsoft_model" / config.pipeline_save_file
     return joblib.load(save_path)
 
 def make_prediction(input_data: dict) -> dict:
