@@ -1,12 +1,14 @@
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=200&section=header&text=Abdallah%20Hashad&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Quantitative%20Finance%20×%20Machine%20Learning&descAlignY=55&descColor=f0a500" width="100%"/>
+</div>
 
-# Abdallah Hashad
-
-### Quantitative Finance × Machine Learning
+<div align="center">
 
 **Data Scientist**
 
 </div>
+
+---
 
 ---
 
